@@ -20,26 +20,30 @@
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      padding: 24px;
+      padding: 20px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 16px;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex: 1;
+      min-width: 200px;
     }
     img.icon {
-      width: 90px;
-      height: 90px;
-      border-radius: 20px;
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
       border: 1px solid #ccc;
       object-fit: cover;
       background: #fff;
     }
-    .meta {
-      flex: 1;
-      min-width: 200px;
-    }
     .meta h1 {
-      font-size: 22px;
+      font-size: 20px;
       margin: 0 0 4px;
     }
     .meta .info {
@@ -47,18 +51,13 @@
       color: #555;
       line-height: 1.5;
     }
-    .btn-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
     a.btn {
-      padding: 12px 28px;
+      padding: 12px 24px;
       border-radius: 999px;
       background-color: #1a73e8;
       color: white;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 14px;
       text-decoration: none;
       white-space: nowrap;
       transition: background 0.3s;
@@ -76,22 +75,22 @@
 </head>
 <body>
   <div class="wrap">
-    <!-- Card chứa toàn bộ thông tin app -->
+    <!-- Card ứng dụng -->
     <div class="card">
-      <img class="icon" src="https://k3ndzy.github.io/Test333/icon-120.png" alt="App Icon" />
-      <div class="meta">
-        <h1>Cendz</h1>
-        <div class="info">
-          Version: <strong>4.0</strong><br />
-          Bundle ID: <code>com.rossepoke.com.rosse</code><br />
-          Mã nội bộ: 41A472
+      <div class="left">
+        <img class="icon" src="https://k3ndzy.github.io/Test333/icon-120.png" alt="App Icon" />
+        <div class="meta">
+          <h1>Cendz</h1>
+          <div class="info">
+            Version: <strong>4.0</strong><br />
+            Bundle ID: <code>com.rossepoke.com.rosse</code><br />
+            Mã nội bộ: 41A472
+          </div>
         </div>
       </div>
-      <div class="btn-wrap">
-        <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://k3ndzy.github.io/Test333/app.plist">
-          Cài đặt ứng dụng
-        </a>
-      </div>
+      <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://k3ndzy.github.io/Test333/app.plist">
+        Cài đặt
+      </a>
     </div>
 
     <div class="tips">
