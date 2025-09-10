@@ -11,37 +11,21 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://dl.dropboxusercontent.com/scl/fi/ffu1y0k3cb06fdk5zt32m/bubg1.ipa?rlkey=119pw2gjc4my97iq65q2reg3m&amp;st=em5s5qhf</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>display-image</string>
-					<key>needs-shine</key>
-					<false/>
-					<key>url</key>
-					<string>https://k3ndzy.github.io/Test333/icon-120.png</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>full-size-image</string>
-					<key>needs-shine</key>
-					<false/>
-					<key>url</key>
-					<string>https://k3ndzy.github.io/Test333/icon-512.png</string>
+					<string>https://archive.org/download/cen_20191213_20191213/cen.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.rossepoke.com.rosse</string>
+				<string>xg.pubgmobile.xiao</string>
 				<key>bundle-version</key>
 				<string>4.0</string>
 				<key>kind</key>
 				<string>software</string>
-				<key>title</key>
-				<string>Cendz</string>
 				<key>subtitle</key>
 				<string>41A472</string>
+				<key>title</key>
+				<string>Cendz</string>
 			</dict>
 		</dict>
 	</array>
