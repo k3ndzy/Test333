@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Install iOS App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cài đặt ứng dụng Cendz</title>
   <style>
-    body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding:24px;}
-    .wrap{max-width:640px;margin:0 auto;text-align:center;}
-    a.btn{display:inline-block;padding:14px 20px;border-radius:12px;border:1px solid #ccc;text-decoration:none}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+    a.install-btn {
+      display: inline-block;
+      background-color: #1a73e8;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    a.install-btn:hover {
+      background-color: #155ab6;
+    }
+    .note {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Install App</h1>
-    <p>Open this page in <strong>Safari on iPhone/iPad</strong>, then tap the button below.</p>
-    <p><a class="btn" href="itms-services://?action=download-manifest&url=https://archive.org/download/app_manifest_with_icons/app_manifest_with_icons.plist">Install</a></p>
-    <p style="margin-top:32px;font-size:14px;color:#666">If nothing happens, long-press the button &gt; Open.</p>
+  <div class="container">
+    <img src="https://k3ndzy.github.io/Test333/icon-120.png" alt="App Icon" />
+    <h1>Cendz</h1>
+    <div class="subtitle">Version 4.0 • xg.pubgmobile.xiao</div>
+
+    <!-- Nút Cài đặt -->
+    <a class="install-btn" href="itms-services://?action=download-manifest&url=https://k3ndzy.github.io/Test333/app.plist">
+      Cài đặt
+    </a>
+
+    <div class="note">
+      Mở trang này bằng <strong>Safari trên iPhone hoặc iPad</strong><br/>
+      Nếu không có phản hồi, hãy nhấn giữ nút <em>Cài đặt</em> rồi chọn <strong>Open</strong>.
+    </div>
   </div>
 </body>
 </html>
