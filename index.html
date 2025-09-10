@@ -15,6 +15,7 @@
     header .meta p { margin:6px 0 0; color:var(--muted); font-size:14px; }
     .panel { margin-top:18px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
     .btn { display:inline-block; padding:14px 22px; border-radius:12px; text-decoration:none; background:#1a73e8; color:white; font-weight:600; border:1px solid rgba(255,255,255,.12); }
+    .btn.sec { background:#2b7; margin-left:8px; }
     .tips { margin-top:14px; color:var(--muted); font-size:13px; }
     .code { font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace; background:#0f1115; border:1px solid var(--line); border-radius:8px; padding:10px 12px; display:block; color:#cbd5e1; word-break:break-all; }
   </style>
@@ -30,16 +31,27 @@
     </header>
 
     <div class="panel">
-      <p>Mở trang này bằng <strong>Safari trên iPhone/iPad</strong> rồi bấm nút dưới để cài đặt.</p>
-      <p><a class="btn" href="itms-services://?action=download-manifest&url=https://k3ndzy.github.io/Test333/app.plist">Install</a></p>
+      <p>Mở trang này bằng <strong>Safari trên iPhone/iPad</strong> rồi bấm một trong các nút dưới để cài đặt.</p>
+
+      <!-- Nút chính (github.io) -->
+      <p><a class="btn" href="itms-services://?action=download-manifest&url=https://k3ndzy.github.io/Test333/app.plist">Install</a>
+
+      <!-- Nút dự phòng 1: URL-encode -->
+      <a class="btn sec" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fk3ndzy.github.io%2FTest333%2Fapp.plist">Install (Encoded)</a></p>
+
+      <!-- Nút dự phòng 2: raw.githubusercontent -->
+      <p><a class="btn" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3ndzy%2FTest333%2Fmain%2Fapp.plist">Install (Raw)</a></p>
+
       <div class="tips">
-        <p>Nếu không hiện thông báo cài đặt: nhấn giữ nút <em>Install</em> → Open. Đảm bảo manifest đang ở HTTPS và IPA ký hợp lệ.</p>
+        <p>Nếu không hiện pop-up: nhấn giữ nút → Open. Đảm bảo manifest ở HTTPS và IPA là direct link.</p>
       </div>
     </div>
 
     <div class="panel" style="margin-top:18px;">
-      <p class="tips">Manifest URL (tham khảo):</p>
+      <p class="tips">Manifest URL:</p>
       <span class="code">https://k3ndzy.github.io/Test333/app.plist</span>
+      <p class="tips" style="margin-top:10px;">Icon test nhanh:</p>
+      <span class="code">https://k3ndzy.github.io/Test333/icon-120.png</span>
     </div>
   </div>
 </body>
